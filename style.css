@@ -1,0 +1,125 @@
+
+:root{
+    --sky: #edc3f0;
+    --blue: #9DC3F0;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0px;
+  /*  font-family: Verdana, Geneva, Tahoma,sans-serif;*/
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+ font-style: normal;
+ text-shadow: var(--blue) 1px 0 2px;
+}
+
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+ul{
+   /* border: 1px solid black;*/
+    width: 1025px;
+    height: 105px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row;
+}
+li{
+    width: 200px;
+    height: 100px;
+  /*  border: 1px solid black;*/
+    list-style: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
+    transition: transform .2s;
+    background-color: #fff;
+}
+li:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    
+}
+p{
+    color: grey;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*  border: 2px solid rgb(255, 0, 0);*/
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-image: url(sunrise.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+input{
+    width: 400px;
+    height: 50px;
+    font-size: 32px;
+ /*   border: 1px solid black*/
+
+}
+button{
+    height: 50px;
+    width: 75px;
+   background-color:rgb(157, 195, 240,.5);
+/*  border: 1px solid rgb(157, 195, 240);*/
+  border-radius: 0px 25px 25px 0px;
+  /* margin: 0;*/
+  border:none;
+}
+button:hover{
+cursor: pointer;
+background-color:rgb(157, 195, 240, 1);
+}
+.search{
+/*  border: 1px solid rgb(255, 0, 255);*/
+width: 500px;
+height: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+#Temp{
+    font-size: 32px;
+    animation: breath 4s cubic-bezier(.79,.14,.15,.86) infinite;
+    color:white;
+}
+@keyframes breath {
+from {color: rgb(255, 191, 0);}
+to {color: yellow;}
+}
+h1{
+/*border: 1px solid black;*/
+margin-bottom: 50px;
+/*color: var(--sky);
+mix-blend-mode: color;*/
+color:white;
+}
+#weatherCond{
+color:aliceblue
+}
+input{
+background-color: rgba(255,255,255,.5);
+border: none;
+border-radius: 25px 0px 0px 25px;
+text-align: center;
+}
+#locale{
+color:white
+}
